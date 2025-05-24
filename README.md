@@ -17,6 +17,7 @@ You can also only include/exclude some files (defaults to only `.dart`, is a pat
   rev: "master"
   hooks:
     - id: dart-format
+      args: [--language-version=3.7]
       files: lib/* # Only format source files
       exclude: lib/src/utils.dart # Exclude utils
 ```

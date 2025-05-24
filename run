@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-dart format . --language-version=latest  --set-exit-if-changed
+EXTRA_ARGS="$1"
+
+dart format . $EXTRA_ARGS --set-exit-if-changed
